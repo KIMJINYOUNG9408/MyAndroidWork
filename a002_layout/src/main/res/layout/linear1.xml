@@ -20,10 +20,10 @@
         android:text="TextView" />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="359dp"
         android:layout_height="wrap_content"
-        android:text="버튼 A"
         android:layout_margin="20dp"
+        android:text="버튼 A"
 
         />
     <!-- 마진은 간격이다 . 패딩과 차이를 알자-->

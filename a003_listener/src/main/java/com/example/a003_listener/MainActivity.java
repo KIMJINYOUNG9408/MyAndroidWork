@@ -1,4 +1,4 @@
-package com.lec.android.a003_widget;
+package com.example.a003_listener;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn1 = findViewById(R.id.btn1);
-        Button btn2 = findViewById(R.id.btn2);
-        Button btn3 = findViewById(R.id.btn3);
+        Button btn1 = findViewById(R.id.cal_btn1);
+        Button btn2 = findViewById(R.id.cal_btn2);
+        Button btn3 = findViewById(R.id.cal_btn3);
 
         tvResult = findViewById(R.id.tvResult);
         et = findViewById(R.id.et);
@@ -149,16 +149,3 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         et.setText("");
     }
 } // end Activity
-
-
-
-
-
-
-
-
-
-
-
-
-

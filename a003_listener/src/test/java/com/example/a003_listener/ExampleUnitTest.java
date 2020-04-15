@@ -1,4 +1,4 @@
-package com.lec.android.a003_widget;
+package com.example.a003_listener;
 
 import org.junit.Test;
 

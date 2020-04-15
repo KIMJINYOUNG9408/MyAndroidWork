@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn1"
+            android:id="@+id/cal_btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -22,14 +22,14 @@
             android:text="Button1" />
 
         <Button
-            android:id="@+id/btn2"
+            android:id="@+id/cal_btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Button2" />
 
         <Button
-            android:id="@+id/btn3"
+            android:id="@+id/cal_btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -125,12 +125,11 @@
 
             <Button
                 android:id="@+id/btnClear"
-                android:layout_width="wrap_content"
+                android:layout_width="249dp"
                 android:layout_height="wrap_content"
-                android:layout_span="2"
                 android:layout_column="1"
-                android:text="Clear"
-                />
+                android:layout_span="2"
+                android:text="Clear" />
 
         </TableRow>
 
@@ -160,15 +159,6 @@
     </LinearLayout>
 
 </LinearLayout>
-
-
-
-
-
-
-
-
-
 
 
 

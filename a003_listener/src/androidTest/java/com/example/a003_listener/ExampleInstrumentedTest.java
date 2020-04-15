@@ -1,4 +1,4 @@
-package com.lec.android.a003_widget;
+package com.example.a003_listener;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.lec.android.a003_widget", appContext.getPackageName());
+        assertEquals("com.example.a003_listener", appContext.getPackageName());
     }
 }
