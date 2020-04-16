@@ -16,6 +16,8 @@ public class Main3Activity extends AppCompatActivity {
     int add = 2;
 
     Handler handler = new Handler();
+
+    boolean isTracking = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +40,14 @@ public class Main3Activity extends AppCompatActivity {
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
                 Toast.makeText(getApplicationContext(),"트래킹 시작", Toast.LENGTH_SHORT);
+                isTracking = true;
             }
 
             // tracking 끝날때 ( 손을 떼면  ) 콜백
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 Toast.makeText(getApplicationContext(),"트래킹 종료", Toast.LENGTH_SHORT);
-
+                isTracking = false;
             }
         });
 
@@ -56,24 +59,26 @@ public class Main3Activity extends AppCompatActivity {
 
                 int max = seekBar.getMax();
 
-                while(true){
-                    value = seekBar.getProgress() + add;
+                while(true) {
+                    if (!isTracking) {
+                        value = seekBar.getProgress() + add;
 
-                    if(value > max || value < 0){
-                        add = -add;
-                    }
-
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            seekBar.setProgress(value);
+                        if (value > max || value < 0) {
+                            add = -add;
                         }
-                    });
 
-                    try {
-                        Thread.sleep(100);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
+                        handler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                seekBar.setProgress(value);
+                            }
+                        });
+
+                        try {
+                            Thread.sleep(100);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
