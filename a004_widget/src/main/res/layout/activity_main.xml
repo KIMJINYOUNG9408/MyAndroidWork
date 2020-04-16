@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity" >
 
     <TextView
         android:id="@+id/tvTitle"
@@ -38,8 +38,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="15"
-                    android:hint="이름입력"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="Name" />
             </TableRow>
 
             <TableRow
@@ -58,8 +58,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="비밀번호입력"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    />
             </TableRow>
 
             <TableRow
@@ -71,7 +71,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="이메일"
-
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <EditText
@@ -79,8 +78,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="이메일 입력"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textEmailAddress"
+                    android:hint="이메일 입력"/>
             </TableRow>
 
             <TableRow
@@ -99,8 +98,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="숫자입력"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    />
             </TableRow>
 
             <TableRow
@@ -111,8 +110,8 @@
                     android:id="@+id/tvResult"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="TextView"
                     android:layout_span="2"
-                    android:text="TextView"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             </TableRow>
@@ -315,7 +314,6 @@
                     android:text="Name" />
             </TableRow>
 
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -351,6 +349,8 @@
                     android:inputType="textPersonName"
                     android:text="Name" />
             </TableRow>
+
+
         </TableLayout>
     </ScrollView>
 
