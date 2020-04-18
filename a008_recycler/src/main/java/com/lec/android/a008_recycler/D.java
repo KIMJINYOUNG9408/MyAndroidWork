@@ -85,7 +85,7 @@ public class D {
    private static int idx = 0;
 
    public static int next(){
-       idx = idx % FACEID.length;
+       idx = idx % NAME.length;
        return idx++; // idx값 리턴하고 1증가
    }
 

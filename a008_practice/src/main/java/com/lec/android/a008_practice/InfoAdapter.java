@@ -1,5 +1,7 @@
 package com.lec.android.a008_practice;
 
+import android.content.Intent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
@@ -15,24 +17,33 @@ import java.util.List;
 
 public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
 
-    List<Info>  items = new ArrayList<Info>();
+    List<Info> items = new ArrayList<Info>();
 
     static InfoAdapter adapter;
+
+    public InfoAdapter() { // 기본 생성자
+        this.adapter = this;
+    }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        LayoutInflater inf = LayoutInflater.from(parent.getContext());
+
+        View itemView =  inf.inflate(R.layout.item,parent,false);
+
+        return new ViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        Info item = items.get(position); // arrayList 에서 가져오기
+        holder.setItem(item);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return items.size();
     }
 
 
@@ -44,9 +55,10 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
+            tvName = itemView.findViewById(R.id.tvName);
             tvAge = itemView.findViewById(R.id.tvAge);
             tvAddress = itemView.findViewById(R.id.tvAddress);
-            tvName = itemView.findViewById(R.id.tvName);
+
             btnDelItem = itemView.findViewById(R.id.btnDelItem);
             swOnOff = itemView.findViewById(R.id.swOnOff);
 
@@ -71,6 +83,24 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
                 }
             });
 
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position = getAdapterPosition();
+
+                    Intent intent = new Intent(v.getContext(),InfoDetail.class);
+
+                    intent.putExtra("info",adapter.getItem(position));
+                    v.getContext().startActivity(intent);
+                }
+            });
+
+        }
+
+        public void setItem(Info item){
+            tvName.setText(item.getName());
+            tvAge.setText(item.getAge());
+            tvAddress.setText(item.getAddress());
         }
     }
 

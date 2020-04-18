@@ -4,18 +4,19 @@ import java.io.Serializable;
 
 public class Info implements Serializable {
     String name;
-    int age;
+    String age;
     String address;
 
-    public Info(String name, int age, String address) {
+    public Info(){
+
+    }
+    public Info(String name, String age, String address) {
         this.name = name;
         this.age = age;
         this.address = address;
     }
 
-    public Info(){
 
-    }
 
     public String getName() {
         return name;
@@ -25,11 +26,11 @@ public class Info implements Serializable {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

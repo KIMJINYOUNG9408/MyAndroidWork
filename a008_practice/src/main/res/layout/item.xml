@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:orientation="vertical">
     <!--
 CardView 의 atrrribute 속성은 위의 app 네임스페이스를 사용하게 됩니다.
@@ -16,52 +15,52 @@ CardView 의 atrrribute 속성은 위의 app 네임스페이스를 사용하게 
     <androidx.cardview.widget.CardView
 
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        app:cardBackgroundColor="#B5D9F6"
+        android:layout_height="130dp"
+        app:cardBackgroundColor="#AEBAF8"
         app:cardCornerRadius="10dp"
-        app:cardElevation="15dp"
+        app:cardElevation="5dp"
         app:cardUseCompatPadding="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-
             <TextView
                 android:id="@+id/tvName"
-                android:layout_width="163dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
+                android:layout_width="168dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
                 android:text="name"
                 android:textSize="30sp"
-
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvAge"
-                android:layout_width="122dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="12dp"
+                android:layout_width="166dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="8dp"
                 android:text="phone"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/tvName"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvAddress"
-                android:layout_width="286dp"
-                android:layout_height="52dp"
-                android:layout_marginTop="28dp"
-                android:text="address"
+                android:layout_width="337dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:text="email"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+                app:layout_constraintTop_toBottomOf="@+id/tvAge" />
 
             <Switch
                 android:id="@+id/swOnOff"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="32dp"
                 android:text="On/Off"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
