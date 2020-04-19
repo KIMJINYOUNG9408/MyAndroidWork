@@ -1,6 +1,6 @@
 package com.lec.android.a008_practice;
 
-public class Example {
+public class Example { // 동작실험용 클래스. 사용X
 
 
 

@@ -89,8 +89,15 @@
     </androidx.cardview.widget.CardView>
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="상세정보를 보려면 나이에는 숫자만 입력하셔야 합니다." />
 
-        <Button
+    <Button
             android:id="@+id/btnInsert"
             android:layout_width="372dp"
             android:layout_height="35dp"

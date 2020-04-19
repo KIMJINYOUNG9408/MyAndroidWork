@@ -6,7 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".InfoDetail">
-
+    <ImageView
+        android:id="@+id/ivPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        app:srcCompat="@android:drawable/btn_dialog" />
+    <TextView
+        android:id="@+id/tvAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="animal"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:gravity="center"/>
     <TextView
         android:id="@+id/tvName"
         android:layout_width="match_parent"
@@ -19,14 +31,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
         android:id="@+id/tvAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <Button
         android:id="@+id/btnBack"
