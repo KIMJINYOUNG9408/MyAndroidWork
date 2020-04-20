@@ -10,7 +10,7 @@ import android.os.Message;
 import android.widget.TextView;
 import android.widget.Toast;
 
-// TODO
+
 // Value1
 // 1 ~ 10 까지 1초 단위로 증가시키기
 // 10초에 도달하면 멈추어서 Toast 띄우기
