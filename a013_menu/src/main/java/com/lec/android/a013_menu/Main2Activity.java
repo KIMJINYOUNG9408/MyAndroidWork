@@ -39,7 +39,7 @@ public class Main2Activity extends AppCompatActivity {
 
     }
     // onCreateContextMenu()
-// 컨텍스트 메뉴가 생성될때, 한번만 호출되는 콜백 메서드
+// 컨텍스트 메뉴가 생성될때, 한번만 호출되는 콜백 메서드.
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
