@@ -2,24 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Main3Activity">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OptionMenu"
+        android:text="ActionBar"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <Button
+        android:id="@+id/btnActionIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        android:text="액션바 아이콘 바꾸기" />
 
-
+    <Button
+        android:id="@+id/btnActionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="액션바 타이틀로" />
 </LinearLayout>

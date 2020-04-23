@@ -2,24 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/ll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Main5Activity">
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OptionMenu"
+        android:text="Sub / PopUp Menu"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <Button
+        android:id="@+id/btnPopup"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/ic_input_add" />
-
-
+        android:layout_height="88dp"
+        android:text="클릭하면 팝업메뉴가!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 </LinearLayout>
