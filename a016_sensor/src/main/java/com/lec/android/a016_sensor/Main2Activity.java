@@ -84,9 +84,9 @@ public class Main2Activity extends AppCompatActivity implements SensorEventListe
                 float [] orientation = new float[3];
                 SensorManager.getOrientation(R, orientation);
 
-                float azimuth = orientation[0]; // z 축 회전방향
-                float pitch = orientation[1]; // x 축 회전방향
-                float roll = orientation[2]; // y 축 회전방향
+                float azimuth = orientation[0]; // z 축 회전방향 ( -3 ~ + 3)
+                float pitch = orientation[1]; // x 축 회전방향   ( + 1.5 ~ -1.5 )
+                float roll = orientation[2]; // y 축 회전방향    ..
 
                 String str = String.format("%10s:%10s:%10s\n%10.2f:%10.2f:%10.2f\n","방위각","피치","롤",azimuth,pitch,roll);
                 tv.setText(str);
