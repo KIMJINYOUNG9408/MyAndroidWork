@@ -219,6 +219,7 @@ public class Main2Activity extends AppCompatActivity {
                 if(grantResults.length <= 0) {
                     Toast.makeText(this,"권한 획득 실패",Toast.LENGTH_SHORT).show();
                     // onDestrory() 혹은 finish()
+
                     finish();
                     return;
                 }
